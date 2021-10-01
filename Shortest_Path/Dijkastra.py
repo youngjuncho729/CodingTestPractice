@@ -46,3 +46,9 @@ def dijkstra(start):
                 distance[j[0]] = cost
 
 dijkstra(start)
+
+for i in range(1, n + 1):
+  if distance[i] == INF:
+    print("INFINITY")
+  else:
+    print(distance[i])
