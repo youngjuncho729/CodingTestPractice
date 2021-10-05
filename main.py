@@ -1,1 +1,1 @@
-from GraphTheory.CycleDetection import *
+from GraphTheory.Kruskal import *
