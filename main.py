@@ -1,1 +1,1 @@
-from GraphTheory.DisjointSet import *
+from GraphTheory.CycleDetection import *
