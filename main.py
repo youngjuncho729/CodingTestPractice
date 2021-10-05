@@ -1,1 +1,1 @@
-from Shortest_Path.Telegram import *
+from GraphTheory.DisjointSet import *
