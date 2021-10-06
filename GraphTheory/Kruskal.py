@@ -1,4 +1,4 @@
-# Finding minimum spanning tree(MST)
+# Finding minimum spanning tree(MST) O(ElogE)
 def find_parent(parent, x):
   if parent[x] != x:
     parent[x] = find_parent(parent, parent[x])
