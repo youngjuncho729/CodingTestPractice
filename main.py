@@ -1,1 +1,1 @@
-from GraphTheory.CitySeparation import *
+from GraphTheory.Curriculum import *
