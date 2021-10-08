@@ -31,7 +31,7 @@ graph_stack = {
   'M': ['H']
 }
 
-# recursive 
+# recursive O(N)
 def dfs_recursive(graph, v, visited):
   visited[v] = True
   print(v, end = ' ')

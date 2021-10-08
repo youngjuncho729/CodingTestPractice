@@ -1,1 +1,1 @@
-from DFS_BFS.DFS import *
+from DFS_BFS.BFS import *

@@ -16,8 +16,8 @@ graph = {
   'M': ['H']
 }
 
-# dfs using stack
-def bfs_stack(graph, start_node):
+# bfs using queue  O(N)
+def bfs_queue(graph, start_node):
   visited = list()
   q = deque()
 
@@ -31,4 +31,4 @@ def bfs_stack(graph, start_node):
 
   return visited
 
-print(bfs_stack(graph, 'A'))
+print(bfs_queue(graph, 'A'))
