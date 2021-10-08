@@ -1,1 +1,1 @@
-from GraphTheory.Curriculum import *
+from DFS_BFS.DFS import *
