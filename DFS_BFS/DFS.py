@@ -42,18 +42,18 @@ def dfs_recursive(graph, v, visited):
 #dfs_recursive(graph_recursive, 1, visited)
 
 
-# dfs using stack(deque)
+# dfs using stack
 def dfs_stack(graph, start_node):
   visited = list()
-  q = deque()
+  stack = list()
 
-  q.append(start_node)
+  stack.append(start_node)
 
-  while q:
-    now = q.pop()
+  while stack:
+    now = stack.pop()
     if now not in visited:
       visited.append(now)
-      q.extend(graph[now])
+      stack.extend(reversed(graph[now]))
 
   return visited
 
