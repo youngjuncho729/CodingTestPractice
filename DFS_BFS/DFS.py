@@ -1,5 +1,4 @@
 # Depth-First Search
-from collections import deque 
 
 graph_recursive = [
   [],
