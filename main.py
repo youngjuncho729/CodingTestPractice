@@ -1,1 +1,1 @@
-from Greedy.ImpossiblePrice import *
+from Greedy.BowlingBall import *
