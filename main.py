@@ -1,1 +1,1 @@
-from Greedy.FlipString import *
+from Greedy.ImpossiblePrice import *
