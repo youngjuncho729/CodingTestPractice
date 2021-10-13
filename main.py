@@ -1,1 +1,1 @@
-from Greedy.BowlingBall import *
+from Implementation.LuckyStraight import *
