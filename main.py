@@ -1,1 +1,1 @@
-from Implementation.RearrangeString import *
+from Implementation.CompressStr import *
