@@ -1,13 +1,5 @@
 {
   "files": {
-    "README.md": [
-      {
-        "id": "1b1c64d6-107a-4d5e-bcef-04647023c322",
-        "line": 3,
-        "version": 1,
-        "index": 67
-      }
-    ],
     "Shortest_Path/Adv_Dijkastra.py": [
       {
         "id": "088ad4be-248d-4a57-b925-9f6c6fe18512",
