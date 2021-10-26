@@ -1,5 +1,6 @@
 from itertools import combinations
 N, M = map(int, input().split())
+INF = int(1e9)
 
 houses = []
 chickens = []
@@ -8,36 +9,21 @@ for r in range(N):
   info = list(map(int, input().split()))
   for c in range(N):
     if info[c] == 1:
-      houses.append((r + 1, c +1))
+      houses.append((r, c))
     if info[c] == 2:
-      chickens.append((r + 1, c +1))
-print(chickens)
+      chickens.append((r, c))
+
 combination = list(combinations(chickens, M))
 
-result = 999999
+result = INF
 for combo in combination:
-  combo_dist = 0
+  total_distance = 0
   for house in houses:
-    chicken_dist = 9999999
+    shortest_chicken = INF
     for chicken in combo:
       distance = abs(chicken[0] - house[0]) + abs(chicken[1] - house[1])
-      if distance < chicken_dist:
-        chicken_dist = distance
-    combo_dist += chicken_dist
-    print(combo_dist)
-  if result < combo_dist:
-    result = combo_dist
+      shortest_chicken = min(shortest_chicken, distance)
+    total_distance += shortest_chicken
+  result = min(result, total_distance)
 
 print(result)
-
-"""
-chicken_distance = 0
-for house in houses:
-  shortest = 999999
-  for chicken in chickens:
-    distance = abs(chicken[0] - house[0]) + abs(chicken[1] - house[1])
-    if distance < shortest:
-      shortest = distance
-  chicken_distance += shortest
-
-"""
