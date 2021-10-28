@@ -6,23 +6,22 @@ def solution(n, weak, dist):
     weak = weak + [x + n for x in weak] 
 
     for start in range(length):
-      for friends in list(permutations(dist, len(dist))):
-        num = 1
-        position = weak[start] + friends[num - 1]
-        for index in range(start, start + length):
-          if position < weak[index]:
-            num += 1
-            if num > len(dist):
-              return -1
-            position = weak[index] + friends[num - 1]        
-      if answer > num:
-        answer = num
+        for friends in list(permutations(dist, len(dist))):
+            num = 1
+            position = weak[start] + friends[num - 1]
+            for index in range(start, start + length):
+                if position < weak[index]:
+                    num += 1
+                    if num > len(dist):
+                        break
+                    position = weak[index] + friends[num - 1]        
+            answer = min(answer, num)
 
-    return answer if answer < len(dist) else -1 
+    return answer if answer <= len(dist) else -1 
 
 
 
 n = 12
-weak = [10, 0]
-dist = [1, 2]
+weak = [1, 5, 6, 10]
+dist = [1, 2, 3, 4]
 print(solution(n, weak, dist))
