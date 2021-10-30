@@ -1,4 +1,6 @@
 from collections import deque
+import sys
+input = sys.stdin.readline
 
 N, M, K, start = map(int, input().split())
 graph = [[] for _ in range(N + 1)]
