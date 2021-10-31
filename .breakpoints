@@ -1,5 +1,13 @@
 {
   "files": {
+    "DFS_BFS/Infection.py": [
+      {
+        "id": "8c3ff229-f227-4624-9b33-8472fe2354fa",
+        "line": 11,
+        "version": 1775,
+        "index": 218
+      }
+    ],
     "Shortest_Path/Adv_Dijkastra.py": [
       {
         "id": "088ad4be-248d-4a57-b925-9f6c6fe18512",

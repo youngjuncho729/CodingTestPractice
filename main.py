@@ -1,1 +1,1 @@
-from DFS_BFS.Laboratory import *
+from DFS_BFS.Infection import *
