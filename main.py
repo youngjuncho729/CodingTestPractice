@@ -1,1 +1,1 @@
-from Sorting.FailRate import *
+from BinarySearch.CountNumber import *
