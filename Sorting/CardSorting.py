@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/1715
+# Key: Choose smallest 2 cards sets every time
 import sys
 import heapq
 input = sys.stdin.readline
