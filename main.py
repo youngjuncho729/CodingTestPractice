@@ -1,1 +1,1 @@
-from DP.GoldMine import *
+from DP.IntegerTriangle import *
