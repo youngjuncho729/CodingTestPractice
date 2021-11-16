@@ -1,1 +1,1 @@
-from DP.IntegerTriangle import *
+from DP.QuitJob import *
