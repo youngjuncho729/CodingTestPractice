@@ -1,1 +1,1 @@
-from DP.Wire_LIS import *
+from DP.UglyNumber import *
