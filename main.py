@@ -1,1 +1,1 @@
-from DP.LIS import *
+from DP.Soldiers import *
