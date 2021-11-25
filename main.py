@@ -1,1 +1,1 @@
-from ShortestPath.Find_Path import *
+from ShortestPath.StudentRanking import *
