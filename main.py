@@ -1,1 +1,1 @@
-from ShortestPath.StudentRanking import *
+from ShortestPath.Mars import *
