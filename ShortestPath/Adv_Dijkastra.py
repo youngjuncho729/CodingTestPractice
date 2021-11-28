@@ -10,7 +10,7 @@ start = int(input())
 # create a list of info about adjacent of each node
 graph = [[] for i in range(n + 1)]
 # either each node is visited or unvisited
-visited = [False] * (n + 1)
+# visited = [False] * (n + 1)
 # set the default distance to INF
 distance = [INF] * (n + 1)
 

@@ -1,1 +1,1 @@
-from ShortestPath.Mars import *
+from ShortestPath.HideAndSeek import *
