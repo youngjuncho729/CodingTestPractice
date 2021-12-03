@@ -1,1 +1,1 @@
-from GraphTheory.DarkRoad import *
+from ShortestPath.StudentRanking import *
