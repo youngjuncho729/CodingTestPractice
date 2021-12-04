@@ -33,3 +33,4 @@ for road in data:
         result += cost
     total += cost
 print(total - result)
+
