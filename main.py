@@ -1,1 +1,1 @@
-from ProblemSolving.AdultShark import *
+from Others.CreatePassword import *
