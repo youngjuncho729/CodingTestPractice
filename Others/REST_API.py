@@ -55,15 +55,15 @@ API 호출 경로: http://jsonplaceholder.typicode.com/users
 HTTP 메서드: GET
 """
 
-# get the information of id=1 user
+# Get the information of id=1 user
 target = "http://jsonplaceholder.typicode.com/users/1"
 responce = requests.get(target)
-print(responce.text)
+# print(responce.text)
 
-# get all users information
+# Get all users information
 target = "http://jsonplaceholder.typicode.com/users"
 responce = requests.get(target)
-print(responce.text)
+# print(responce.text)
 
 # 번호 순서대로 이름만 리스트에 담기
 data = responce.json()
@@ -71,4 +71,18 @@ data = responce.json()
 name_list = []
 for user in data:
   name_list.append(user["name"])
-print(name_list)
+# print(name_list)
+
+target = "http://jsonplaceholder.typicode.com/posts"
+responce = requests.get(target)
+print(responce.headers)
+
+# Updata a new post
+new_post = {
+    "title": "foo",
+    "body": "bar",
+    "userId": 1,
+  }
+
+result = requests.post(target, data=new_post)
+print(result.text)
